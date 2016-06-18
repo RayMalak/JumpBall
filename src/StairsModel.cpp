@@ -19,14 +19,14 @@ StairsModel::~StairsModel()
 
 void StairsModel::GenStairs(const unsigned int stairsNum)
 {
-	std::auto_ptr<ShapeModel> shape(new ShapeModel(ShapeModel::Sphere));
-
+	osg::ref_ptr<ShapeModel> shape = new ShapeModel(ShapeModel::Box);
+	
 	for (unsigned int n = 0; n < stairsNum; n++)
 	{
 		osg::ref_ptr<osg::MatrixTransform> mtPos = new osg::MatrixTransform;
 		osg::ref_ptr<osg::MatrixTransform> mtScale = new osg::MatrixTransform;
 		
-		mtScale->addChild(shape->GetNode());
+		mtScale->addChild(shape);
 		mtPos->addChild(mtScale);
 
 		if (n > 0)
@@ -39,7 +39,7 @@ void StairsModel::GenStairs(const unsigned int stairsNum)
 			mtPos->setMatrix(osg::Matrix::translate(osg::Vec3(shape->getRaidius()*n*2.0, 0.0, shape->getRaidius()*n)));
 		}
 
-		_root->addChild(mtPos);
+		addChild(mtPos);
 
 	}
 

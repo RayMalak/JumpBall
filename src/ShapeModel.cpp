@@ -41,6 +41,6 @@ void ShapeModel::GenShape(Type typeShape)
 	}
 
 	geode->addDrawable(new osg::ShapeDrawable(shape));
-	_root->addChild(geode);
+	addChild(geode);
 
 }

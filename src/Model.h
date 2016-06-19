@@ -2,6 +2,10 @@
 
 #include "osglib.h"
 
+#define MN_STAIRS        "stairs_name"
+#define MN_BALL          "ball_name"
+#define MN_BOX          "box_name"
+
 class Model : public osg::MatrixTransform
 {
 public:

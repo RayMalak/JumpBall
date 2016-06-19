@@ -4,11 +4,13 @@
 
 StairsModel::StairsModel()
 {
+	setName(MN_STAIRS);
 	GenStairs(2);
 }
 
 StairsModel::StairsModel(unsigned int stairsNum)
 {
+	setName(MN_STAIRS);
 	GenStairs(stairsNum);
 }
 
@@ -42,6 +44,4 @@ void StairsModel::GenStairs(const unsigned int stairsNum)
 		addChild(mtPos);
 
 	}
-
-	
 }

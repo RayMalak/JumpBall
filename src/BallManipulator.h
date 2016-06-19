@@ -16,11 +16,11 @@ public:
 private:
 	Model& _ball;
 
-	static osg::Vec3	s_vcLeft;
-	static osg::Vec3	s_vcRight;
-	static osg::Vec3	s_vcUp;
-	static osg::Vec3	s_vcDown;
-	static osg::Vec3	s_vcFront;
-	static osg::Vec3	s_vcBack;
+	static osg::Vec3f	s_vcLeft;
+	static osg::Vec3f	s_vcRight;
+	static osg::Vec3f	s_vcUp;
+	static osg::Vec3f	s_vcDown;
+	static osg::Vec3f	s_vcFront;
+	static osg::Vec3f	s_vcBack;
 
 };

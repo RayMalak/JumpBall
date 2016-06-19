@@ -28,12 +28,10 @@ void Model::GetValidChangePos(osg::Vec3&vcPosIn, osg::Vec3&vcPosOut)
 	
 	// X 
 	{
-		osg::ref_ptr<osg::Vec3d> vcStart = new osg::Vec3d(this->getBound()._center);
-		osg::ref_ptr<osg::Vec3d> vcEnd = new osg::Vec3d(vcPosIn);
-		osg::ref_ptr<osgUtil::LineSegmentIntersector> lsi = new osgUtil::LineSegmentIntersector(vcStart, vcEnd);
+// 		osg::Vec3d vcStart(this->getBound()._center);
+// 		osg::Vec3d vcEnd(vcPosIn);
+// 		osg::ref_ptr<osgUtil::LineSegmentIntersector> lsi = new osgUtil::LineSegmentIntersector(vcStart, vcEnd);
 
-		osgUtil::in
-		
 	}
 	
 
@@ -42,6 +40,8 @@ void Model::GetValidChangePos(osg::Vec3&vcPosIn, osg::Vec3&vcPosOut)
 	// 3. 得到检测结果
 
 	// 4. 根据检测结果设置新位移
+
+	vcPosOut = vcPosIn;
 
 }
 

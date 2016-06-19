@@ -15,33 +15,45 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="..\src\BallManipulator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="StairsModel.cpp">
+    <ClCompile Include="..\src\KeyboardHandler.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="osglib.cpp">
+    <ClCompile Include="..\src\main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="ShapeModel.cpp">
+    <ClCompile Include="..\src\Model.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="Model.cpp">
+    <ClCompile Include="..\src\osglib.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ShapeModel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\StairsModel.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StairsModel.h">
+    <ClInclude Include="..\src\BallManipulator.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="osglib.h">
+    <ClInclude Include="..\src\KeyboardHandler.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="ShapeModel.h">
+    <ClInclude Include="..\src\Model.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Model.h">
+    <ClInclude Include="..\src\osglib.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\ShapeModel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\StairsModel.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

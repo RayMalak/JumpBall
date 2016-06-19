@@ -18,6 +18,23 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\BallManipulator.cpp" />
+    <ClCompile Include="..\src\KeyboardHandler.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\Model.cpp" />
+    <ClCompile Include="..\src\osglib.cpp" />
+    <ClCompile Include="..\src\ShapeModel.cpp" />
+    <ClCompile Include="..\src\StairsModel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\BallManipulator.h" />
+    <ClInclude Include="..\src\KeyboardHandler.h" />
+    <ClInclude Include="..\src\Model.h" />
+    <ClInclude Include="..\src\osglib.h" />
+    <ClInclude Include="..\src\ShapeModel.h" />
+    <ClInclude Include="..\src\StairsModel.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{0BDB2FDE-8644-4C05-A9A2-280B82FB6797}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -146,19 +163,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Model.cpp" />
-    <ClCompile Include="osglib.cpp" />
-    <ClCompile Include="ShapeModel.cpp" />
-    <ClCompile Include="StairsModel.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Model.h" />
-    <ClInclude Include="osglib.h" />
-    <ClInclude Include="ShapeModel.h" />
-    <ClInclude Include="StairsModel.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

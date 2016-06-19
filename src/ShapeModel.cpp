@@ -28,15 +28,18 @@ void ShapeModel::GenShape(Type typeShape)
 	case ShapeModel::Box:
 	{
 		shape = new osg::Box(vecPos, 2 * m_radius);
+		setName(MN_BOX);
 	}
 	break;
 	case ShapeModel::Sphere:
 	{
 		shape = new osg::Sphere(vecPos, m_radius);
+		setName(MN_BALL);
 	}
 	break;
 	default:
 		shape = new osg::Box(vecPos, 2 * m_radius);
+		setName(MN_BOX);
 		break;
 	}
 

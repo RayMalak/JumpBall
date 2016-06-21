@@ -22,6 +22,6 @@ private:
 	void GenShape(Type typeShape);
 
 private:
-	const float m_radius;
+	const int m_radius;
 };
 

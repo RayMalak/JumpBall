@@ -27,6 +27,8 @@ void StairsModel::GenStairs(const unsigned int stairsNum)
 	{
 		osg::ref_ptr<osg::MatrixTransform> mtPos = new osg::MatrixTransform;
 		osg::ref_ptr<osg::MatrixTransform> mtScale = new osg::MatrixTransform;
+		mtPos->setName("mtPos");
+		mtScale->setName("mtScale");
 		
 		mtScale->addChild(shape);
 		mtPos->addChild(mtScale);

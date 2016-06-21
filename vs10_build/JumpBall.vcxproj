@@ -142,6 +142,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src\BallManipulator.cpp" />
+    <ClCompile Include="..\src\GeomeryModel.cpp" />
     <ClCompile Include="..\src\KeyboardHandler.cpp" />
     <ClCompile Include="..\src\main.cpp" />
     <ClCompile Include="..\src\Model.cpp" />
@@ -151,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\src\BallManipulator.h" />
+    <ClInclude Include="..\src\GeomeryModel.h" />
     <ClInclude Include="..\src\KeyboardHandler.h" />
     <ClInclude Include="..\src\Model.h" />
     <ClInclude Include="..\src\osglib.h" />

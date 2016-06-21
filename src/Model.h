@@ -4,7 +4,9 @@
 
 #define MN_STAIRS        "stairs_name"
 #define MN_BALL          "ball_name"
-#define MN_BOX          "box_name"
+#define MN_BOX           "box_name"
+#define BALL_RADIUS      (2)
+
 
 class Model : public osg::MatrixTransform
 {
@@ -13,11 +15,10 @@ public:
 	~Model();
 
 	// change the node position, use relative position
-	void changePostion(osg::Vec3&);
-
-	// Get valid changed pos
-	void GetValidChangePos(osg::Vec3&vcPosIn, osg::Vec3&vcPosOut);
-
+	void changePostion(osg::Vec3d&);
+	
+	
+	void toPosition(osg::Vec3& vcPos);
 
 };
 

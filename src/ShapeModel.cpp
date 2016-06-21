@@ -2,13 +2,13 @@
 #include <osg/ShapeDrawable>
 
 ShapeModel::ShapeModel()
-	:m_radius(1.0)
+	:m_radius(1)
 {
 	GenShape(Box);
 }
 
 ShapeModel::ShapeModel(Type typeShape)
-	: m_radius(1.0)
+	: m_radius(1)
 {
 	GenShape(typeShape);
 }
@@ -33,7 +33,7 @@ void ShapeModel::GenShape(Type typeShape)
 	break;
 	case ShapeModel::Sphere:
 	{
-		shape = new osg::Sphere(vecPos, m_radius);
+		shape = new osg::Sphere(vecPos, BALL_RADIUS);
 		setName(MN_BALL);
 	}
 	break;
@@ -43,7 +43,11 @@ void ShapeModel::GenShape(Type typeShape)
 		break;
 	}
 
-	geode->addDrawable(new osg::ShapeDrawable(shape));
+	osg::ref_ptr<osg::ShapeDrawable> shapeDrawable = new osg::ShapeDrawable(shape);
+	geode->addDrawable(shapeDrawable);
+
 	addChild(geode);
 
+	shapeDrawable->setColor(osg::Vec4(0.5, 0.8, 0.8, 0.5));
+	
 }
